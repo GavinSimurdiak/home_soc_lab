@@ -1,0 +1,5 @@
+Ubuntu And Kali Linux Setup:
+
+
+
+Setting up Kali Linux and Ubuntu virtual machines was easy enough, as premade image ISOs already exist on the internet that I was able to download. The more difficult part was having to connect them over a shared network, but I did this by utilizing the network portion of VirtualBox to create a NAT Network that the two machines could connect on. At first, I had some difficulties getting both machines to have apparent inet addresses, but I realized that the MAC addresses were the same for both the Ubuntu and Kali Linux machines, causing issues. After changing on of the MAC addresses, I was able to successfully gain addresses for both machines and I was able to SSH into my Ubuntu account from the Kali Linux Machine, proving the connection was working correctly. In terms of smaller setup aspects, I downloaded various tools into Ubuntu such as curl, zip, htop, etc (basic working tools). I also set up a future structure of folders to create the skeleton for eventual scripts and testing. The version I currently have running for the machines is Ubuntu 26.04.
