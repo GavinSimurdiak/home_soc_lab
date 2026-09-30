@@ -31,7 +31,7 @@ showed exactly the failed attempts I generated. Expanding one event confirmed:
 - `Failure Reason: Unknown user name or bad password` (`Status 0xC000006D`, `Sub Status 0xC000006A`)
 - `Source Network Address: 10.0.2.5` — my Kali VM
 
-I ran the attempts in two separate bursts a bit apart in time: one burst of 6 failed logons and one of 10, both landing on `DESKTOP-GTDV9R5`. [Once you check EventCode=4740 around the second burst: note here whether it actually triggered a real account lockout, since 10 happens to match my configured lockout threshold.]
+I ran the attempts in two separate bursts a bit apart in time: one burst of 6 failed logons and one of 10, both landing on `DESKTOP-GTDV9R5`. 
 
 I also confirmed a real successful login by re-running the connection with the correct password, which opened an actual Windows desktop inside the FreeRDP window — proof the whole loop (attack → telemetry → detection) works end to end, not just the failure half.
 
